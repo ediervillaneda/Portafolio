@@ -6,8 +6,13 @@ export interface InfoPagina {
   facebook?: string;
   twitter?: string;
   instagram?: string;
-  equipo_trabajo?: Equipotrabajo;
+  equipo_trabajo?: EquipoTrabajo;
 }
 
-interface Equipotrabajo {
+export interface EquipoTrabajo {
+  frase?: string;
+  nombre?: string;
+  subtitulo?: string;
+  twitter?: string;
+  url?: string;
 }
