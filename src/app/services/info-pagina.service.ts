@@ -30,7 +30,6 @@ export class InfoPaginaService {
       .subscribe((resp: EquipoTrabajo) => {
         this.cargada = true;
         this.equipo = resp;
-        console.log(resp);
       });
   }
 }
