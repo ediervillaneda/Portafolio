@@ -8,7 +8,6 @@ export interface InfoPagina {
   instagram?: string;
   equipo_trabajo?: EquipoTrabajo;
 }
-
 export interface EquipoTrabajo {
   frase?: string;
   nombre?: string;

@@ -1,0 +1,16 @@
+/*
+  Color del Loading
+*/
+svg path,
+svg rect {
+  fill: black;
+}
+
+.loading {
+   display: block;
+   position: absolute;
+   z-index: 10001;
+   left: 50%;
+   transform: translateX(-50%);
+
+}
