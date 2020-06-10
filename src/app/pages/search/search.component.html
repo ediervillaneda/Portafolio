@@ -1,0 +1,20 @@
+<section class="ae-container-fluid rk-main">
+   <div *ngIf="productosService.cargando" class="loading">
+     <h2>Cargando...</h2>
+     <div class="loader loader--style1" title="0">
+       <img src="../../../assets/img/loading.svg">
+     </div>
+
+   </div>
+   <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 ">
+       <a *ngFor="let producto of productosService.productosFiltrado" [routerLink]="['/item', producto.cod]" class="rk-item ae-masonry__item animate__animated animate__fadeInDown">
+         <img src="assets/img/{{ producto.url}}.jpg" alt="">
+         <div class="item-meta">
+           <h2>{{ producto.titulo }}</h2>
+           <p>{{ producto.categoria }}</p>
+         </div>
+       </a>
+     </div>
+   </section>
+ </section>
