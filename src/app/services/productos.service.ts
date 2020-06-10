@@ -44,14 +44,9 @@ export class ProductosService {
       this.filtrarProductos(termino);
 
     }
-
-    // this.productosFiltrado = this.productos.filter(productos => {
-    //   return true;
-    // });
   }
 
   private filtrarProductos(termino: string) {
-    console.log(this.productos);
     this.productosFiltrado = [];
 
     termino = termino.toLowerCase();
